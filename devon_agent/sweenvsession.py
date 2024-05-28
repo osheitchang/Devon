@@ -619,3 +619,9 @@ submit"""
                 }
 
         return docs
+
+    def generate_new_documentation():
+        docs = {}
+        for env in self.environment.values():
+            signature = inspect.signature(tool.function)
+            
